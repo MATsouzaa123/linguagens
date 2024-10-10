@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c_plus_plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <button>
+            <a href="quarta.html">proxima</a>
+        </button>
+    </nav>
+<br>
+<h1>CONCEITO DA LINGUAGEM C_PLUS_PLUS</h1>
+<br>
+<p>C++ é uma linguagem de programação de propósito geral, desenvolvida por Bjarne Stroustrup no início da década de 1980 como uma extensão da linguagem C,Entre suas principais características, destacam-se o alto desempenho, pois oferece controle detalhado sobre recursos do sistema e memória; flexibilidade, permitindo programação tanto procedural quanto orientada a objetos; e portabilidade, já que o código pode ser compilado em diferentes plataformas com facilidade,C++ é amplamente utilizado em diversas áreas, incluindo desenvolvimento de sistemas operacionais, jogos, aplicações financeiras, software embarcado e ferramentas de desenvolvimento, como compiladores e editores de texto.</p>
+<br>
+<br>
+<h2>DMONSTRAÇAO FEITA NO ARDUINO IDE COM C++</h2>
+<br>
+<div><img src="arduino IDE.png" alt="arduino"></div>
+<br>
+<br>
+<br>
+<h3>CODIGO TEXTO FEITO NO ARDUINO IDE</h3>
+<br>
+<pre>
+    // C++ code  
+    int POT1 = 0;
+    int POT2 = 0;
+    int RES = 0;
+    void setup()
+    {
+      pinMode(12, OUTPUT);
+      pinMode(A0, INPUT);
+      Serial.begin(9600);
+      pinMode(A1, INPUT);
+      POT1 = 0;
+      POT2 += 0;
+      RES = 0;
+      digitalWrite(12, LOW);
+    }
+    void loop()
+    {
+      POT1 += analogRead(A0);
+      Serial.println("pot 1-------------------------------------------------------");
+      Serial.println(POT1);
+      POT2 += analogRead(A1);
+      Serial.println("pot 2-------------------------------------------------------------------");
+      Serial.println(POT2);
+      if (POT1 > POT2) {
+        RES += (POT1 + POT2);
+        Serial.println("res-------------------------------------------------------------------------");
+        Serial.println(RES);
+        digitalWrite(12, HIGH);
+      }
+      delay(1); // Wait for 1 millisecond(s)
+    }
+    
+</pre>

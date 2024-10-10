@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <button>
+            <a href="index.html">proxima</a>
+        </button>
+    </nav>
+    <br>
+    <h1>CONCEITO JAVA</h1>
+    <br>
+    <p>Java é uma linguagem de programação de alto nível e orientada a objetos, criada em 1995 pela Sun Microsystems.
+        Sua principal característica é a portabilidade: o código pode ser executado em qualquer dispositivo que tenha a
+        Java Virtual Machine (JVM), permitindo o princípio "escreva uma vez, execute em qualquer lugar".Java oferece
+        segurança robusta, suporte a multithreading e uma vasta gama de bibliotecas e frameworks, facilitando o
+        desenvolvimento de aplicações escaláveis. É amplamente utilizada em desenvolvimento de aplicativos web, móveis
+        (especialmente Android), sistemas embarcados e software corporativo, contando com uma comunidade ativa de
+        desenvolvedores.</p>
+    <br>
+    <br>
+    <h2>EXEMPLO CODIGO JAVA</h2>
+    <br>
+    <div><img src="java2.png" alt="intelligence"></div>
+    <br>
+    <br>
+    <h3>EXEMPLO CODIGO JAVA TEXTO</h3>
+    <br>
+<pre>import java.util.Scanner;
+
+    public class javaclass5 {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+    
+            int pot1 = 0, pot02 = 0, res = 0;
+            boolean led = false;
+    
+            System.out.print("digite o valor do sensor potenciometro: 1 ");
+            pot1 = sc.nextInt();
+            System.out.println("Digite o valor do sensor do pot2: ");
+            pot02 = sc.nextInt();
+    
+            if (pot1 > pot02) {
+                res += pot1 + pot02;
+                System.out.printf("A resposta é: %d ", res);
+                led = true;
+            }else{
+                 led = false;
+            }
+            sc.close();
+        }
+    }</pre>
